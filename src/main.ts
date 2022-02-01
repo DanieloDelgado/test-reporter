@@ -170,6 +170,7 @@ class TestReporter {
     const baseUrl = createResp.data.html_url
     const summary = getReport(results, {listSuites, listTests, baseUrl, onlySummary})
 
+    core.info(summary)
     core.info('Creating annotations')
     const annotations = getAnnotations(results, this.maxAnnotations)
 
