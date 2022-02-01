@@ -151,7 +151,6 @@ class TestReporter {
       core.info(`Processing test results from ${file}`)
       const tr = await parser.parse(file, content)
       results.push(tr)
-      core.info(tr)
     }
 
     core.info(`Creating check run ${name}`)
